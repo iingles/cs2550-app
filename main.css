@@ -198,6 +198,7 @@ td {
 /* General CSS Styles */
 
 /* For responsive sizing/use of rem */
+
 html {
     font-size: 62.5%;
 }
@@ -207,7 +208,21 @@ body {
     color: #000;
 }
 
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
 .main-header {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -216,6 +231,7 @@ body {
     background: rgba(0, 0, 0, 0.9);
     height: 5rem;
     color: #fff;
+    z-index: 1000;
 }
 
 .main-header nav {
@@ -230,4 +246,150 @@ body {
     text-transform: uppercase;
     font-size: 1.8rem;
     color: #fff;
+}
+
+main {
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+p.description {
+    margin: 1rem 0;
+}
+
+.page-content {
+    padding: 2rem 1rem;
+    width: 65%;
+    border-right: 1px solid #ccc;
+}
+
+.page-sidebar {
+    width: 25%;
+    padding: 2rem;
+}
+
+.sidebar-content {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card {
+    max-width: 40rem;
+    border-radius: 1rem;
+}
+
+.card .top-img-wrapper {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.top-img-wrapper img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.image-description {
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.grid table {
+    width: 80rem;
+    border: 1px solid #ccc;
+}
+
+.grid table td {
+    position: relative;
+    width: 10rem;
+    height: 15rem;
+    border: 1px dotted #ccc;
+}
+
+td .day {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+td .day:hover {
+    background: #a5f5ffa2 radial-gradient(circle, transparent 0.5%, #a5f5ffa2 1%) center/15000%;
+}
+
+td .day:active {
+    background-color: #89c0f0;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.day .appointment {
+    position: absolute;
+    font-size: 1.2rem;
+    max-width: 9rem;
+    padding: .5rem;
+    color: #fff;
+    background: #63c763;
+    border-radius: 0.6rem;
+}
+
+.day.prevMonth, .day.nextMonth {
+    color: #999;
+    background: #ccc;
+}
+
+.month-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 3.2rem;
+}
+
+.prev-arrow, .next-arrow {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.grid-output {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#monthSelect {
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+
+#selectedMonthInput {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.monthArrow {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+#debugValues {
+    padding: 10px;
+    border: 1px solid #000;
 }

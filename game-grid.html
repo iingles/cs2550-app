@@ -15,78 +15,33 @@
         <nav>
             <a href="./index.html">Home</a>
             <a href="./game-grid.html">Game Grid</a>
+            <a href="./checkpoint.html">Checkpoint</a>
         </nav>
     </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr> 
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+               
+        <div id="calGrid" class="grid"></div>
+        <div class="sidebar">
+            <div class="output-container">
+                <div id="outputTitle">Cell clicked:</div>
+                <div id="gridOutput" class="grid-output"></div>
+            </div>
+            <div class="input-wrapper">
+                <div class="input-wrapper">
+                    <label for="month">Month</label>
+                    <input type="text" id="selectedMonthInput" />
+                </div>                
+                <select id="monthSelect"></select>
+                <div class="button-wrapper">
+                    <button class="monthArrow">prev</button>
+                    <button class="monthArrow">next</button>
+                </div>
+            </div>
+            <div id="debugValues">
+                
+            </div>
+        </div>
+        
     </main>
     <script type="text/javascript" lang="javascript" src="calApp.js"></script>
 </body>

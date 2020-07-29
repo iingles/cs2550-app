@@ -1,22 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css" />
     <title>Home | CS 2550</title>
 </head>
+
 <body>
     <header class="main-header">
-        <h1>CS2550 Summer 2020</h1>
-        <p>by Isaac Ingles</p>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./game-grid.html">Game Grid</a>
+            <a href="./checkpoint.html">Checkpoint</a>
         </nav>
     </header>
     <main>
-        
+        <div class="page-content">
+            <h1>Javascript Calendar App</h1>
+            <p class="description">
+                For my project, I've chosen to build a calendar/scheduling app; taking some inspiration from <a
+                    href="https://fullcalendar.io" target="_blank">fullcalendar</a>.
+            </p>
+
+            <div class="grid">
+                <div class="month-name">
+                    <span class="prev-arrow">&larr;</span>
+                    &nbsp;July 2020&nbsp;
+                    <span class="next-arrow">&rarr;</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="day prevMonth">
+                                    <div class="number">28</div>
+                                    <span class="appointment">  8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day prevMonth">
+                                    <div class="number">29</div>
+                                    <span class="appointment">  8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day prevMonth">
+                                    <div class="number">30</div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">01</div>
+                                    <span class="appointment">  11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">02</div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">03</div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">04</div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="day">
+                                    <div class="number">05</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">06</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">07</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">08</div>
+                                    <span class="appointment"> 11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">09</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">10</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">11</div>
+                        
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="day">
+                                    <div class="number">12</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">13</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">14</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">15</div>
+                                    <span class="appointment"> 11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">16</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">17</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">18</div>
+                        
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="day">
+                                    <div class="number">19</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">20</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">21</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">22</div>
+                                    <span class="appointment"> 11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">23</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">24</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">25</div>
+                        
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="day">
+                                    <div class="number">26</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">279</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">28</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">29</div>
+                                    <span class="appointment"> 11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">30</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day">
+                                    <div class="number">31</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">01</div>
+                        
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">02</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">03</div>
+                                    <span class="appointment"> 8:00 AM - 09:00 AM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">04</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">05</div>
+                                    <span class="appointment"> 11:00 AM - 12:00 PM</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">06</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">07</div>
+                        
+                                </div>
+                            </td>
+                            <td>
+                                <div class="day nextMonth">
+                                    <div class="number">08</div>
+                        
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <aside class="page-sidebar">
+            <div class="sidebar-content">
+                <div class="card">
+                    <div class="top-img-wrapper">
+                        <img class="top-img" src="./images/Grant-Calendar.jpg"
+                            alt="Close-up of a calendar with colored pins on some of the days">
+                        <p class="image-description">
+                            image taken from
+                            <a href="https://livingwellcounselling.ca/your-emotional-calendar">
+                                livingsellcounselling.ca/your-emotional-calendar
+                            </a>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <h2>Example State</h2>
+                        <pre>
+                            <code>
+                                calendarState {
+                                    "monthName": "July",
+                                    "monthNumber": 7,
+                                    "monthDays": 31,
+                                    "monthYear": 2020,
+}
+
+                            dayState {
+                                "dayName": "Sunday",
+                                "dayNumber": 5,
+                                "dayMonth": 7,
+                                "dayYear": 2020,
+                                "appointments": [
+    "appt1": "08:00 AM - 09:00 AM"
+    ]
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </main>
 </body>
+
 </html>
